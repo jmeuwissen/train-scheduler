@@ -41,7 +41,7 @@ function formSubmissionHandler(event) {
     newTrain.firstArrival = document.getElementById("first-arrival").value.trim();
     newTrain.frequency = document.getElementById("frequency").value.trim();
 
-    console.log("this is the train we submitted:" + JSON.stringify(newTrain));
+    // console.log("this is the train we submitted:" + JSON.stringify(newTrain));
 
 
     getTrains(function (trains) {
