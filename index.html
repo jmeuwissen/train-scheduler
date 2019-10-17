@@ -21,31 +21,57 @@
 </head>
 
 <body>
+    <div class="container">
 
 
-    <form>
-        <div class="form-group">
-            <label for=""></label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Help text</small>
-        </div>
-        <div class="form-group">
-            <label for=""></label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Help text</small>
-        </div>
-        <div class="form-group">
-            <label for=""></label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Help text</small>
-        </div>
-        <div class="form-group">
-            <label for=""></label>
-            <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-            <small id="helpId" class="form-text text-muted">Help text</small>
-        </div>
-    </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-ca.js"></script>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+<br>
+<br>
+<br>
+<h2>Add a Train</h2>
+        <form>
+            <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" name="" id="name" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">train name</small>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" name="" id="destination" aria-describedby="helpId"
+                    placeholder="">
+                <small id="helpId" class="form-text text-muted">destination</small>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" name="" id="first-arrival" aria-describedby="helpId"
+                    placeholder="">
+                <small id="helpId" class="form-text text-muted">first arrival (HH:mm 24-hr time)</small>
+            </div>
+            <div class="form-group">
+                <label for=""></label>
+                <input type="text" class="form-control" name="" id="frequency" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">frequency (minutes)</small>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"
         integrity="sha256-H/ZsHjKSJUnQyCQHZwPmn7VTWFeTTI+qgCP1GkiB9zI=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
